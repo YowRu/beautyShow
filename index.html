@@ -26,8 +26,8 @@
     .right{position:fixed;right:0;bottom:0;width:68px;object-fit: contain;}
     .bannerWP {width:100%;margin:0 auto;width:100%;}
     
-    .owl-carousel .owl-item img{width:70%;height:60vh;position: absolute;bottom:80px;right:0;}
-    .owl-carousel .owl-item .item{height:85vh;position: relative;}
+    .owl-carousel .owl-item img{width:70%;height:55vh;position: absolute;bottom:80px;right:0;}
+    .owl-carousel .owl-item .item{height:80vh;position: relative;}
     .owl-carousel .owl-item .item.red{background-color:#dd9999;}
     .owl-carousel .owl-item .item.purple{
 background: -moz-linear-gradient(-45deg,  #6cdfe5 0%, #8e91f0 50%, #ffa5b9 100%); /* FF3.6-15 */
@@ -144,11 +144,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6cdfe5', end
         let $headerH =$('header .top').outerHeight();
 
         $('#main').height($H-$headerH);
-        $('.owl-carousel .owl-item .item').height($H-$headerH);
+        $('.owl-carousel .owl-item .item').height($H-$headerH-40);
         $('#banner').owlCarousel({
             loop:true,
             margin:10,
-    //        autoplay:true,
+            autoplay:true,
             items:1,
         });
     });
