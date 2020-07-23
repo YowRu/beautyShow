@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/OwlCarousel2-2.3.4/owl.carousel.js"></script>
+    <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/OwlCarousel2-2.3.4/owl.theme.default.min.css">
+    <title>TAIWAN BEAUTY INTL SHOW 2020</title>
+</head>
+<style>
+    *{margin:0;padding:0;}
+    :focus {outline:none;}
+    ul,a{text-decoration: none;list-style: none;}
+    body{background-color: #000;}
+    header .top{max-width:1280px;width:100%;margin:0 auto;display: flex;justify-content: space-between;align-items: center;max-width:2680px;
+    padding:48px 72px;box-sizing: border-box;}
+    header .top nav{display: flex;justify-content:center;align-items: center;}
+    header .top nav a{color: #fff;margin-right:116px;}
+    header .top nav a:nth-child(3){margin-right: 0;}
+    #main{box-sizing: border-box;position: relative;
+    width:100%;margin:0 auto;overflow: hidden;padding:0 72px;box-sizing: border-box;}
+    .left{position:fixed;left:0;top:40%;width:110px;object-fit: contain;z-index:2;}
+    .right{position:fixed;right:0;bottom:0;width:68px;object-fit: contain;}
+    .bannerWP {width:100%;margin:0 auto;width:100%;}
+    
+    .owl-carousel .owl-item img{width:70%;height:60vh;position: absolute;bottom:80px;right:0;}
+    .owl-carousel .owl-item .item{height:85vh;position: relative;}
+    .owl-carousel .owl-item .item.red{background-color:#dd9999;}
+    .owl-carousel .owl-item .item.purple{
+background: -moz-linear-gradient(-45deg,  #6cdfe5 0%, #8e91f0 50%, #ffa5b9 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #6cdfe5 0%,#8e91f0 50%,#ffa5b9 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #6cdfe5 0%,#8e91f0 50%,#ffa5b9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6cdfe5', endColorstr='#ffa5b9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+    .owl-carousel .owl-item .item.blue{background-color:#7aadd9;}
+    .owl-carousel .owl-item .item.yellow{background-color:#bc9d56;}
+    .owl-carousel .owl-item .item.green{background-color:#91b288;}
+    
+    /*banner tab*/
+    .no-js .owl-carousel, .owl-carousel.owl-loaded{position: relative;}
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{background:transparent}
+    .owl-theme .owl-nav.disabled+.owl-dots{margin-top:-80px;display:flex;align-items: center;justify-content: flex-start;
+    position:relative;z-index: 2;position: absolute;right:0;width:70%;}
+    .owl-theme .owl-dots .owl-dot{width:19%;}
+    .owl-theme .owl-dots .owl-dot span{width:100%;height:80px;line-height:80px; background-color:rgba(216, 216, 216, 0.24);border-radius:0;margin:0;;}
+    .owl-theme .owl-dots .owl-dot:nth-child(3) span,
+    .owl-theme .owl-dots .owl-dot:nth-child(5) span{line-height:20px;padding:20px 0;box-sizing:border-box;}
+    .owl-theme .owl-dots .owl-dot:nth-child(1) span:before{content:'面子的事 刻不容緩';}
+    .owl-theme .owl-dots .owl-dot:nth-child(2) span:before{content:'無國界通路 一指登入';}
+    .owl-theme .owl-dots .owl-dot:nth-child(3) span:before{content:'不用面對面\A近看無暇的容貌';white-space:pre;}
+    .owl-theme .owl-dots .owl-dot:nth-child(4) span:before{content:'科技無距更美麗';}
+    .owl-theme .owl-dots .owl-dot:nth-child(5) span:before{content:'數據分析\A撒豆成兵';white-space:pre;}
+    .owl-theme .owl-dots .owl-dot span:before{color:#fff;}
+    .owl-theme .owl-dots .owl-dot.active:nth-child(1) span:before{color:#ff6d67;}
+    .owl-theme .owl-dots .owl-dot.active:nth-child(2) span:before{color:#ffb3f7;}
+    .owl-theme .owl-dots .owl-dot.active:nth-child(3) span:before{color:#7aadd9;}
+    .owl-theme .owl-dots .owl-dot.active:nth-child(4) span:before{color:#bc9d56;}
+    .owl-theme .owl-dots .owl-dot.active:nth-child(5) span:before{color:#91b288;}
+    .owl-theme .owl-dots .owl-dot.active:nth-child(3),
+    .owl-theme .owl-dots .owl-dot.active:nth-child(4),
+    .owl-theme .owl-dots .owl-dot.active:nth-child(5){background: #000;}
+    /*text*/
+    .owl-carousel .owl-item .item .content{position: absolute;left:54px;top:30%;z-index:2;}
+    .owl-carousel .owl-item .item .content .title{font-size:72px;font-family: 'PingFangTC-Semibold';letter-spacing: 2.5px;color: #fff;}
+    .owl-carousel .owl-item .item .content .info{margin-top: 48px;margin-left:156px; display: flex; justify-content:flex-start;align-items: flex-start;}
+    .owl-carousel .owl-item .item .content .info img{width:20px;height: 20px;left: 0;
+    top: 9px;object-fit: contain;position: relative;}
+    .owl-carousel .owl-item .item .content .info p{font-size: 32px;letter-spacing: 1.2px;margin-left: 12px;color: #fff;}
+</style>
+<body>
+    <header>
+        <div class="top">
+            <img src="img/logo.svg" class="logo" alt="logo">
+            <nav>
+                <a href="">我要報名參展</a>
+                <a href="">我想登記觀展</a>
+                <a href="">關於Taiwan Beauty Virtual</a>
+            </nav>
+            <img src="img/logo_text.svg" alt="TAIWAN BEAUTY INTL SHOW 2020" class="logoText">
+        </div>
+    </header>
+    <div id="main">
+        <img src="img/left.png" alt="" class="left">
+        <img src="img/right.png" alt="" class="right">
+        <div class="bannerWP">
+            <div class="loop owl-carousel owl-theme" id="banner">
+           <div class="item red">
+              <div class="content">
+                  <div class="title">面子的事 刻不容緩</div>
+                  <div class="info">
+                      <img src="img/dot.png" alt="">
+                      <p>線上即時互動 不錯過任何資訊</p>
+                  </div>
+              </div>
+              <img src="img/PC/1.png" alt="">
+            </div>
+            <div class="item purple">
+              <div class="content">
+                  <div class="title">無國界通路 就等你一指登入</div>
+                  <div class="info">
+                      <img src="img/dot.png" alt="">
+                      <p>全球產業動態 皆在指掌之間</p>
+                  </div>
+              </div>
+              <img src="img/PC/2.png" alt="">
+            </div>
+            <div class="item blue">
+              <div class="content">
+                  <div class="title">不用面對面<br>更能近看你無瑕的容貌</div>
+                  <div class="info">
+                      <img src="img/dot.png" alt="">
+                      <p>線上展覽 新品發表<br>驚艷國際舞台</p>
+                  </div>
+              </div>
+              <img src="img/PC/3.png" alt="">
+            </div>
+            <div class="item yellow">
+              <div class="content">
+                  <div class="title">科技無距更美麗</div>
+                  <div class="info">
+                      <img src="img/dot.png" alt="">
+                      <p>善用雲端創造潮流<br>躍居世界妝鏡嬌點</p>
+                  </div>
+              </div>
+              <img src="img/PC/4.png" alt="">
+            </div>
+            <div class="item green">
+              <div class="content">
+                  <div class="title">數據分析<br>為你撒豆成兵</div>
+                  <div class="info">
+                      <img src="img/dot.png" alt="">
+                      <p>追蹤每一筆客源<br>把握每一次商機</p>
+                  </div>
+              </div>
+              <img src="img/PC/5.png" alt="">
+            </div>
+        </div>
+        </div>
+    </div>
+<script>
+    $( document ).ready(function() {
+        let $H =$(window).height();
+        let $headerH =$('header .top').outerHeight();
+
+        $('#main').height($H-$headerH);
+        $('.owl-carousel .owl-item .item').height($H-$headerH);
+        $('#banner').owlCarousel({
+            loop:true,
+            margin:10,
+    //        autoplay:true,
+            items:1,
+        });
+    });
+</script>
+</body>
+</html>
