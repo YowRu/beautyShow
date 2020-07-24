@@ -79,10 +79,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6cdfe5', end
     #main .mobile .owl-theme .owl-dots .owl-dot span{width: 18px;height: 6px;background: rgba(255, 255, 255, 0.53);}
     #main .mobile .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{background: #fff;}
     #main .mobile .owl-carousel .owl-item img {display: block;width:100%;height:auto;position:absolute;bottom:0;}
+/*
     #main .mobile .owl-carousel .owl-item .item.purple img{top: 147px;}
     #main .mobile .owl-carousel .owl-item .item.blue img{top:179px;}
     #main .mobile .owl-carousel .owl-item .item.yellow img{top:120px;}
     #main .mobile .owl-carousel .owl-item .item.green img{top:144px;}
+*/
     #main .mobile .owl-carousel{height:94vh;}
     #main .mobile .down{background-color:rgba(0, 0, 0, 0.78);display:flex;justify-content:center;align-items:center;height:100px;
     position: fixed;z-index: 2;bottom:0;width:100%;}
@@ -96,7 +98,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6cdfe5', end
     #main .mobile .owl-carousel .owl-item .item.yellow{background:url('img/mobile/p4-b.png') no-repeat center;background-size: cover; }
     #main .mobile .owl-carousel .owl-item .item.green{background:url('img/mobile/p5-b.png') no-repeat center;background-size: cover; }
     /*main .mobile text*/
-    #main .mobile .owl-carousel .owl-item .item .content{margin-left:35px;padding-top:39px;}
+    #main .mobile .owl-carousel .owl-item .item .content{margin-left:35px;padding-top:39px;position: relative;z-index: 2;}
     #main .mobile .owl-carousel .owl-item .item .content .time,
     #main .mobile .owl-carousel .owl-item .item .content .info .title,
     #main .mobile .owl-carousel .owl-item .item .content .info p{color:#fff;}
@@ -149,14 +151,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6cdfe5', end
          header .mobile nav span:nth-of-type(2){width: 16px;}
     }
     @media(max-width:600px){
-        #main .mobile .owl-carousel .owl-item .item.red img{top: 169px;}
         #main .mobile .owl-theme .owl-nav.disabled+.owl-dots{bottom:20px;}
-        #main .mobile .owl-carousel .owl-item .item.purple img{top:174px;}
-        #main .mobile .owl-carousel .owl-item .item.yellow img {top: 160px;}
     }
     @media(max-width:450px){
-        #main .mobile .owl-carousel .owl-item .item.red img{bottom: 80px;top: auto;}
-        #main .mobile .owl-carousel .owl-item .item.purple img{bottom: 80px;top: auto;}
         #main .mobile .owl-carousel .owl-item .item .content .info .title{font-size:22px;}
     }
     @media(max-width:320px){
@@ -165,5 +162,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6cdfe5', end
         #main .mobile .owl-carousel .owl-item .item .content{margin-left:15px;padding-top: 29px;position:relative;z-index: 2;}
         #main .mobile .owl-carousel .owl-item .item .content .info .title{font-size:22px;}
         #main .mobile .down{height:80px;}
-        #main .mobile .owl-carousel .owl-item .item.red img{bottom:0;top: auto;}
     }
