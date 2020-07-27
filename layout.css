@@ -1,4 +1,6 @@
 *{margin:0;padding:0;}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body, input,a,li,p,span{font-family: 'Noto Sans TC', sans-serif;font-size:1rem;}
 :focus {outline:none;}
 ul,a{text-decoration: none;list-style: none;}
 body{width: 100vw;height: 100vh;background-color: #000;overflow: hidden;padding:30px 72px;box-sizing:border-box;position: relative;}
