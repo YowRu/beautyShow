@@ -141,7 +141,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6cdfe5', end
        #main .pc .owl-carousel .owl-item img,
        #main .pc .owl-theme .owl-nav.disabled+.owl-dots{width: 93%;}
     }
-    @media(max-width:902px){
+    @media(max-width:975px){
         header .pc,#main .pc{display:none;}
         header .mobile{display:flex;height:144px;}
         #main .mobile{display: block;}
