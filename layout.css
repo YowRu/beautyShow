@@ -52,7 +52,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6cdfe5', end
     #main .pc .owl-theme .owl-dots .owl-dot.active{background: rgba(0, 0, 0, 0.21);}
     /*text*/
     #main .pc .owl-carousel .owl-item .item .content{position: absolute;left:54px;top:25%;z-index:2;}
-    #main .pc .owl-carousel .owl-item .item .content .title{font-size:72px;font-family: 'PingFangTC-Semibold';letter-spacing: 2.5px;color: #fff;}
+    #main .pc .owl-carousel .owl-item .item .content .title{font-size:72px;letter-spacing: 2.5px;color: #fff;}
     #main .pc .owl-carousel .owl-item .item .content .info{margin-top: 48px;margin-left:156px; display: flex; justify-content:flex-start;align-items: flex-start;}
     #main .pc .owl-carousel .owl-item .item .content .info img{width:20px;height: 20px;left: 0;padding-top:0;
     top: 9px;object-fit: contain;position: relative;}
