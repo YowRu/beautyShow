@@ -1,9 +1,9 @@
 *{margin:0;padding:0;}
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap');
-body, input,a,li,p,span{font-family: 'Noto Sans TC', sans-serif;font-size:1rem;}
+body, input,a,li,p,span{font-family: 'Noto Sans TC', sans-serif,'微軟正黑體';font-size:1rem;}
 :focus {outline:none;}
 ul,a{text-decoration: none;list-style: none;}
-body{width: 100vw;height: 100vh;background-color: #000;overflow: hidden;padding:30px 72px;box-sizing:border-box;position: relative;}
+body{width: 100vw;height: 100vh;background-color: #000;overflow: hidden;padding:30px 72px;box-sizing:border-box;position: relative;font-family: 'Noto Sans TC', sans-serif,'微軟正黑體';}
 header .pc{width:100%;margin:0 auto 20px;display: flex;justify-content: space-between;align-items: center;}
 header .pc nav{display: flex;justify-content:center;align-items: center;}
 header .pc nav a{color:#fff;margin-right:116px;padding:13px 14px;border-radius:8px;}
